@@ -5,7 +5,7 @@
 class rancid (
   $filterpwds         = 'ALL', # yes, no, all
   $nocommstr          = 'YES', # yes or no
-  $maxrounds          = '4',
+  $maxrounds          = '2',
   $oldtime            = '4',
   $locktime           = '4',
   $parcount           = '5',
@@ -175,7 +175,7 @@ class rancid (
     path   => $homedir_real,
     owner  => $user_real,
     group  => $group_real,
-    mode   => '0750',
+    mode   => '0755',
   }
 
   file { 'rancid_config':
